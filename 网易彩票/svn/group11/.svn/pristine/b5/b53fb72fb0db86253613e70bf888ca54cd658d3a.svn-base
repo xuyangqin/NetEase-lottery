@@ -1,0 +1,77 @@
+//
+//  ZCButtomView.m
+//  网易彩票
+//
+//  Created by Ning Xie on 16/6/20.
+//  Copyright © 2016年 itcast. All rights reserved.
+//
+
+#import "ZCButtomView.h"
+#import "ZCButton.h"
+
+
+@interface ZCButtomView ()
+
+@property (strong,nonatomic) UIButton *selectedButton;
+
+@end
+
+@implementation ZCButtomView
+
+/*
+// Only override drawRect: if you perform custom drawing.
+// An empty implementation adversely affects performance during animation.
+- (void)drawRect:(CGRect)rect {
+    // Drawing code
+}
+*/
+
+-(void)addButtonWithImage:(UIImage *)image andWithSelectedImage:(UIImage *)selectedImage
+{
+    ZCButton *button = [[ZCButton alloc]init];
+    
+    [button setBackgroundImage:image forState:UIControlStateNormal];
+    [button setBackgroundImage:selectedImage forState:UIControlStateSelected];
+    
+    [button addTarget:self action:@selector(clickButton:) forControlEvents:UIControlEventTouchDown];
+    
+    
+    [self addSubview:button];
+}
+
+-(void)layoutSubviews
+{
+    CGFloat buttonWidth = self.bounds.size.width / self.subviews.count;
+    CGFloat buttonHeight = self.bounds.size.height;
+    CGFloat buttonY = 0;
+
+    [self.subviews enumerateObjectsUsingBlock:^(__kindof UIButton * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        
+        CGFloat buttonX = idx * buttonWidth;
+        
+        obj.frame = CGRectMake(buttonX, buttonY, buttonWidth, buttonHeight);
+        
+        if (idx == 0) {
+            obj.selected = YES;
+            self.selectedButton = obj;
+        }
+        
+    }];
+}
+
+-(void)clickButton:(UIButton *)sender
+{
+    self.selectedButton.selected = NO;
+    
+    sender.selected = YES;
+    
+    self.selectedButton = sender;
+    
+    if ([self.delegate respondsToSelector:@selector(buttomView:andWithSelectedIndex:)])
+    {
+        NSInteger index = [self.subviews indexOfObject:sender];
+        [self.delegate buttomView:self andWithSelectedIndex:index];
+    }
+    
+}
+@end

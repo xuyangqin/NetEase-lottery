@@ -1,0 +1,82 @@
+//
+//  ZCTabBarController.m
+//  网易彩票
+//
+//  Created by Ning Xie on 16/6/20.
+//  Copyright © 2016年 itcast. All rights reserved.
+//
+
+#import "ZCTabBarController.h"
+#import "ZCButtomView.h"
+
+@interface ZCTabBarController ()<ZCButtomViewDelegate>
+
+@end
+
+@implementation ZCTabBarController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+
+    
+    [self setupChildControllers];
+
+    [self setupButtomView];
+    
+}
+
+//添加子控制器
+- (void)setupChildControllers
+{
+    //购彩大厅控制器
+    UINavigationController *ZCHall = [self navWithStoryboardName:@"ZCHall"];
+    UINavigationController *ZCArena = [self navWithStoryboardName:@"ZCArena"];
+    UINavigationController *ZCDiscovery = [self navWithStoryboardName:@"ZCDiscovery"];
+    UINavigationController *ZCHistory = [self navWithStoryboardName:@"ZCHistory"];
+    UINavigationController *ZCMyLottery = [self navWithStoryboardName:@"ZCMyLottery"];
+    //为跟控制器添加子控制器
+    self.viewControllers = @[ZCHall,ZCArena,ZCDiscovery,ZCHistory,ZCMyLottery];
+}
+
+//添加自定义底部工具条
+-(void)setupButtomView
+{
+    ZCButtomView *buttomView = [[ZCButtomView alloc]initWithFrame:self.tabBar.bounds];
+    buttomView.delegate = self;
+    
+    buttomView.backgroundColor = [UIColor blackColor];
+    
+    [self.tabBar addSubview:buttomView];
+    
+    [self.childViewControllers enumerateObjectsUsingBlock:^(__kindof UINavigationController * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        
+        NSString *imageName = [NSString stringWithFormat:@"TabBar%zd",idx+1];
+        NSString *selectedName = [NSString stringWithFormat:@"TabBar%zdSel",idx+1];
+        
+        UIImage *image = [UIImage imageNamed:imageName];
+        UIImage *selectedImage = [UIImage imageNamed:selectedName];
+        
+        [buttomView addButtonWithImage:image andWithSelectedImage:selectedImage];
+    }];
+}
+
+-(UINavigationController *)navWithStoryboardName:(NSString *)name
+{
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:name bundle:nil];
+    
+    UINavigationController *nav = [storyboard instantiateInitialViewController];
+    
+    nav.topViewController.view.backgroundColor = ZCRandomColor;
+    
+    return nav;
+}
+
+-(void)buttomView:(ZCButtomView *)buttomView andWithSelectedIndex:(NSInteger)index
+{
+    self.selectedIndex = index;
+}
+
+
+
+
+@end

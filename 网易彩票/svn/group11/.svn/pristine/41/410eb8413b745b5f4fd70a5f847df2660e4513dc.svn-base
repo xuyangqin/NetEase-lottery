@@ -1,0 +1,19 @@
+//
+//  PrefixHeader.pch
+//  neteaseLottery_cz30
+//
+//  Created by apple on 16/6/19.
+//  Copyright © 2016年 itcast. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+//优化
+#ifdef DEBUG
+#define MMLog(...) NSLog(__VA_ARGS__)
+#else
+#define MMLog(...)
+#endif
+
+#endif /* PrefixHeader_pch */

@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04196C771D236FD300A7FFE2 /* MMAllCategoryButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 04196C761D236FD300A7FFE2 /* MMAllCategoryButton.m */; };
+		04196C7D1D236FDD00A7FFE2 /* MMDiscovery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04196C781D236FDD00A7FFE2 /* MMDiscovery.storyboard */; };
+		04196C7E1D236FDD00A7FFE2 /* MMGroupBuyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04196C7A1D236FDD00A7FFE2 /* MMGroupBuyController.m */; };
+		04196C7F1D236FDD00A7FFE2 /* MMLuckyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04196C7C1D236FDD00A7FFE2 /* MMLuckyController.m */; };
+		18750FD71D164D28005ED3DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18750FD61D164D28005ED3DF /* main.m */; };
+		18750FE21D164D28005ED3DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18750FE11D164D28005ED3DF /* Assets.xcassets */; };
+		18750FE51D164D28005ED3DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18750FE31D164D28005ED3DF /* LaunchScreen.storyboard */; };
+		187510131D16752B005ED3DF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1875100C1D16752B005ED3DF /* AppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		04196C751D236FD300A7FFE2 /* MMAllCategoryButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMAllCategoryButton.h; sourceTree = "<group>"; };
+		04196C761D236FD300A7FFE2 /* MMAllCategoryButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMAllCategoryButton.m; sourceTree = "<group>"; };
+		04196C781D236FDD00A7FFE2 /* MMDiscovery.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MMDiscovery.storyboard; sourceTree = "<group>"; };
+		04196C791D236FDD00A7FFE2 /* MMGroupBuyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMGroupBuyController.h; sourceTree = "<group>"; };
+		04196C7A1D236FDD00A7FFE2 /* MMGroupBuyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMGroupBuyController.m; sourceTree = "<group>"; };
+		04196C7B1D236FDD00A7FFE2 /* MMLuckyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMLuckyController.h; sourceTree = "<group>"; };
+		04196C7C1D236FDD00A7FFE2 /* MMLuckyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMLuckyController.m; sourceTree = "<group>"; };
+		18750FD21D164D28005ED3DF /* neteaseLottery_cz30.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = neteaseLottery_cz30.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18750FD61D164D28005ED3DF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18750FE11D164D28005ED3DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18750FE41D164D28005ED3DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18750FE61D164D28005ED3DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18750FEC1D164E0F005ED3DF /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		1875100B1D16752B005ED3DF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1875100C1D16752B005ED3DF /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18750FCF1D164D28005ED3DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18750FC91D164D28005ED3DF = {
+			isa = PBXGroup;
+			children = (
+				18750FD41D164D28005ED3DF /* neteaseLottery_cz30 */,
+				18750FD31D164D28005ED3DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18750FD31D164D28005ED3DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18750FD21D164D28005ED3DF /* neteaseLottery_cz30.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18750FD41D164D28005ED3DF /* neteaseLottery_cz30 */ = {
+			isa = PBXGroup;
+			children = (
+				18750FED1D16752B005ED3DF /* Classes */,
+				18750FD51D164D28005ED3DF /* Supporting Files */,
+			);
+			path = neteaseLottery_cz30;
+			sourceTree = "<group>";
+		};
+		18750FD51D164D28005ED3DF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18750FE11D164D28005ED3DF /* Assets.xcassets */,
+				18750FE31D164D28005ED3DF /* LaunchScreen.storyboard */,
+				18750FE61D164D28005ED3DF /* Info.plist */,
+				18750FD61D164D28005ED3DF /* main.m */,
+				18750FEC1D164E0F005ED3DF /* PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18750FED1D16752B005ED3DF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				187510071D16752B005ED3DF /* Main[主体] */,
+				18750FFD1D16752B005ED3DF /* Hall[购彩大厅] */,
+				18750FEE1D16752B005ED3DF /* Arena[竞技场] */,
+				18750FF31D16752B005ED3DF /* Discovery[发现] */,
+				187510021D16752B005ED3DF /* History[开奖] */,
+				1875100E1D16752B005ED3DF /* MyLottery[我的彩票] */,
+				18750FF81D16752B005ED3DF /* Guide[新特性] */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		18750FEE1D16752B005ED3DF /* Arena[竞技场] */ = {
+			isa = PBXGroup;
+			children = (
+				18750FEF1D16752B005ED3DF /* Controllers */,
+				18750FF01D16752B005ED3DF /* Models */,
+				18750FF11D16752B005ED3DF /* Others */,
+				18750FF21D16752B005ED3DF /* Views */,
+			);
+			path = "Arena[竞技场]";
+			sourceTree = "<group>";
+		};
+		18750FEF1D16752B005ED3DF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		18750FF01D16752B005ED3DF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		18750FF11D16752B005ED3DF /* Others */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		18750FF21D16752B005ED3DF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		18750FF31D16752B005ED3DF /* Discovery[发现] */ = {
+			isa = PBXGroup;
+			children = (
+				18750FF41D16752B005ED3DF /* Controllers */,
+				18750FF51D16752B005ED3DF /* Models */,
+				18750FF61D16752B005ED3DF /* Others */,
+				18750FF71D16752B005ED3DF /* Views */,
+			);
+			path = "Discovery[发现]";
+			sourceTree = "<group>";
+		};
+		18750FF41D16752B005ED3DF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				04196C781D236FDD00A7FFE2 /* MMDiscovery.storyboard */,
+				04196C791D236FDD00A7FFE2 /* MMGroupBuyController.h */,
+				04196C7A1D236FDD00A7FFE2 /* MMGroupBuyController.m */,
+				04196C7B1D236FDD00A7FFE2 /* MMLuckyController.h */,
+				04196C7C1D236FDD00A7FFE2 /* MMLuckyController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		18750FF51D16752B005ED3DF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		18750FF61D16752B005ED3DF /* Others */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		18750FF71D16752B005ED3DF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				04196C751D236FD300A7FFE2 /* MMAllCategoryButton.h */,
+				04196C761D236FD300A7FFE2 /* MMAllCategoryButton.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		18750FF81D16752B005ED3DF /* Guide[新特性] */ = {
+			isa = PBXGroup;
+			children = (
+				18750FF91D16752B005ED3DF /* Controllers */,
+				18750FFA1D16752B005ED3DF /* Models */,
+				18750FFB1D16752B005ED3DF /* Others */,
+				18750FFC1D16752B005ED3DF /* Views */,
+			);
+			path = "Guide[新特性]";
+			sourceTree = "<group>";
+		};
+		18750FF91D16752B005ED3DF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		18750FFA1D16752B005ED3DF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		18750FFB1D16752B005ED3DF /* Others */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		18750FFC1D16752B005ED3DF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		18750FFD1D16752B005ED3DF /* Hall[购彩大厅] */ = {
+			isa = PBXGroup;
+			children = (
+				18750FFE1D16752B005ED3DF /* Controllers */,
+				18750FFF1D16752B005ED3DF /* Models */,
+				187510001D16752B005ED3DF /* Others */,
+				187510011D16752B005ED3DF /* Views */,
+			);
+			path = "Hall[购彩大厅]";
+			sourceTree = "<group>";
+		};
+		18750FFE1D16752B005ED3DF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		18750FFF1D16752B005ED3DF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		187510001D16752B005ED3DF /* Others */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		187510011D16752B005ED3DF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		187510021D16752B005ED3DF /* History[开奖] */ = {
+			isa = PBXGroup;
+			children = (
+				187510031D16752B005ED3DF /* Controllers */,
+				187510041D16752B005ED3DF /* Models */,
+				187510051D16752B005ED3DF /* Others */,
+				187510061D16752B005ED3DF /* Views */,
+			);
+			path = "History[开奖]";
+			sourceTree = "<group>";
+		};
+		187510031D16752B005ED3DF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		187510041D16752B005ED3DF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		187510051D16752B005ED3DF /* Others */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		187510061D16752B005ED3DF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		187510071D16752B005ED3DF /* Main[主体] */ = {
+			isa = PBXGroup;
+			children = (
+				187510081D16752B005ED3DF /* Controllers */,
+				187510091D16752B005ED3DF /* Models */,
+				1875100A1D16752B005ED3DF /* Others */,
+				1875100D1D16752B005ED3DF /* Views */,
+			);
+			path = "Main[主体]";
+			sourceTree = "<group>";
+		};
+		187510081D16752B005ED3DF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		187510091D16752B005ED3DF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1875100A1D16752B005ED3DF /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				1875100B1D16752B005ED3DF /* AppDelegate.h */,
+				1875100C1D16752B005ED3DF /* AppDelegate.m */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		1875100D1D16752B005ED3DF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1875100E1D16752B005ED3DF /* MyLottery[我的彩票] */ = {
+			isa = PBXGroup;
+			children = (
+				1875100F1D16752B005ED3DF /* Controllers */,
+				187510101D16752B005ED3DF /* Models */,
+				187510111D16752B005ED3DF /* Others */,
+				187510121D16752B005ED3DF /* Views */,
+			);
+			path = "MyLottery[我的彩票]";
+			sourceTree = "<group>";
+		};
+		1875100F1D16752B005ED3DF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		187510101D16752B005ED3DF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		187510111D16752B005ED3DF /* Others */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		187510121D16752B005ED3DF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18750FD11D164D28005ED3DF /* neteaseLottery_cz30 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18750FE91D164D28005ED3DF /* Build configuration list for PBXNativeTarget "neteaseLottery_cz30" */;
+			buildPhases = (
+				18750FCE1D164D28005ED3DF /* Sources */,
+				18750FCF1D164D28005ED3DF /* Frameworks */,
+				18750FD01D164D28005ED3DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = neteaseLottery_cz30;
+			productName = neteaseLottery_cz30;
+			productReference = 18750FD21D164D28005ED3DF /* neteaseLottery_cz30.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18750FCA1D164D28005ED3DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = itcast;
+				TargetAttributes = {
+					18750FD11D164D28005ED3DF = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 18750FCD1D164D28005ED3DF /* Build configuration list for PBXProject "neteaseLottery_cz30" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18750FC91D164D28005ED3DF;
+			productRefGroup = 18750FD31D164D28005ED3DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18750FD11D164D28005ED3DF /* neteaseLottery_cz30 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18750FD01D164D28005ED3DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18750FE51D164D28005ED3DF /* LaunchScreen.storyboard in Resources */,
+				04196C7D1D236FDD00A7FFE2 /* MMDiscovery.storyboard in Resources */,
+				18750FE21D164D28005ED3DF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18750FCE1D164D28005ED3DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04196C7E1D236FDD00A7FFE2 /* MMGroupBuyController.m in Sources */,
+				04196C771D236FD300A7FFE2 /* MMAllCategoryButton.m in Sources */,
+				18750FD71D164D28005ED3DF /* main.m in Sources */,
+				187510131D16752B005ED3DF /* AppDelegate.m in Sources */,
+				04196C7F1D236FDD00A7FFE2 /* MMLuckyController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		18750FE31D164D28005ED3DF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18750FE41D164D28005ED3DF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18750FE71D164D28005ED3DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		18750FE81D164D28005ED3DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18750FEA1D164D28005ED3DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ./neteaseLottery_cz30/PrefixHeader.pch;
+				INFOPLIST_FILE = neteaseLottery_cz30/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.itcast.neteaseLottery-cz30";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		18750FEB1D164D28005ED3DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ./neteaseLottery_cz30/PrefixHeader.pch;
+				INFOPLIST_FILE = neteaseLottery_cz30/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.itcast.neteaseLottery-cz30";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18750FCD1D164D28005ED3DF /* Build configuration list for PBXProject "neteaseLottery_cz30" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18750FE71D164D28005ED3DF /* Debug */,
+				18750FE81D164D28005ED3DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18750FE91D164D28005ED3DF /* Build configuration list for PBXNativeTarget "neteaseLottery_cz30" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18750FEA1D164D28005ED3DF /* Debug */,
+				18750FEB1D164D28005ED3DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18750FCA1D164D28005ED3DF /* Project object */;
+}

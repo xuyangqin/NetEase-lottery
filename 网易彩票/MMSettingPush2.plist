@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>MMHeader</key>
+		<string></string>
+		<key>MMFooter</key>
+		<string>开启后,当我投注或关注的比赛开始,进球和结束时,会自动发送推送消息提醒我!</string>
+		<key>MMItems</key>
+		<array>
+			<dict>
+				<key>MMTitle</key>
+				<string>推送我关注的比赛</string>
+				<key>MMAccessoryType</key>
+				<string>UISwitch</string>
+				<key>MMKeyName</key>
+				<string>settingPush2_tswgzdbs</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>MMHeader</key>
+		<string>只在以下时间段接受比分直播推送</string>
+		<key>MMFooter</key>
+		<string></string>
+		<key>MMItems</key>
+		<array>
+			<dict>
+				<key>MMTitle</key>
+				<string>起始时间</string>
+				<key>MMSubtitle</key>
+				<string>00:00</string>
+				<key>MMCellStyle</key>
+				<string>UITableViewCellStyleValue1</string>
+				<key>MMHighLight</key>
+				<string>YES</string>
+				<key>MMTimeKey</key>
+				<string>settingPush2_startTime</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>MMHeader</key>
+		<string></string>
+		<key>MMFooter</key>
+		<string></string>
+		<key>MMItems</key>
+		<array>
+			<dict>
+				<key>MMTitle</key>
+				<string>结束时间</string>
+				<key>MMSubtitle</key>
+				<string>23:59</string>
+				<key>MMCellStyle</key>
+				<string>UITableViewCellStyleValue1</string>
+				<key>MMHighLight</key>
+				<string>YES</string>
+				<key>MMTimeKey</key>
+				<string>settingPush2_endTime</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>

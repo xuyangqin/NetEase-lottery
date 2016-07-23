@@ -1,0 +1,25 @@
+//
+//  ZCButton.m
+//  网易彩票
+//
+//  Created by Ning Xie on 16/6/20.
+//  Copyright © 2016年 itcast. All rights reserved.
+//
+
+#import "ZCButton.h"
+
+@implementation ZCButton
+
+/*
+// Only override drawRect: if you perform custom drawing.
+// An empty implementation adversely affects performance during animation.
+- (void)drawRect:(CGRect)rect {
+    // Drawing code
+}
+*/
+
+-(void)setHighlighted:(BOOL)highlighted
+{
+    
+}
+@end

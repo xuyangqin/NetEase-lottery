@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="340"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" misplaced="YES" image="about_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Gsg-bw-Dmx">
+                    <rect key="frame" x="44" y="30" width="211" height="67"/>
+                    <animations/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="版本：3.36 build 314" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOE-yF-s7M">
+                    <rect key="frame" x="44" y="117" width="211" height="17"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="hOE-yF-s7M" firstAttribute="width" secondItem="Gsg-bw-Dmx" secondAttribute="width" id="9qK-CH-bPC"/>
+                <constraint firstItem="hOE-yF-s7M" firstAttribute="centerX" secondItem="Gsg-bw-Dmx" secondAttribute="centerX" id="ODm-Qn-KIg"/>
+                <constraint firstItem="hOE-yF-s7M" firstAttribute="top" secondItem="Gsg-bw-Dmx" secondAttribute="bottom" constant="20" id="gtt-Ke-4F3"/>
+                <constraint firstItem="Gsg-bw-Dmx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="30" id="odo-Vb-yka"/>
+                <constraint firstItem="Gsg-bw-Dmx" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="xXW-Yr-BBf"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="294" y="247"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="about_logo" width="211" height="67"/>
+    </resources>
+</document>

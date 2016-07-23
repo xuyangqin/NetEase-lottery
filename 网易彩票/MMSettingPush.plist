@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>MMHeader</key>
+		<string></string>
+		<key>MMFooter</key>
+		<string></string>
+		<key>MMItems</key>
+		<array>
+			<dict>
+				<key>MMTitle</key>
+				<string>开始推送</string>
+				<key>MMAccessoryType</key>
+				<string>UIImageView</string>
+				<key>MMAccessoryName</key>
+				<string>arrow_right</string>
+				<key>MMTargetVc</key>
+				<string>MMSettingController</string>
+				<key>MMPlistName</key>
+				<string>MMSettingPush1.plist</string>
+			</dict>
+			<dict>
+				<key>MMTitle</key>
+				<string>比分直播推送</string>
+				<key>MMAccessoryType</key>
+				<string>UIImageView</string>
+				<key>MMAccessoryName</key>
+				<string>arrow_right</string>
+				<key>MMTargetVc</key>
+				<string>MMScoreLiveController</string>
+				<key>MMPlistName</key>
+				<string>MMSettingPush2.plist</string>
+			</dict>
+			<dict>
+				<key>MMTitle</key>
+				<string>中奖动画</string>
+				<key>MMAccessoryType</key>
+				<string>UIImageView</string>
+				<key>MMAccessoryName</key>
+				<string>arrow_right</string>
+				<key>MMTargetVc</key>
+				<string>MMSettingController</string>
+				<key>MMPlistName</key>
+				<string>MMWinner.plist</string>
+			</dict>
+			<dict>
+				<key>MMTitle</key>
+				<string>购彩提醒</string>
+				<key>MMAccessoryType</key>
+				<string>UIImageView</string>
+				<key>MMAccessoryName</key>
+				<string>arrow_right</string>
+				<key>MMTargetVc</key>
+				<string>MMSettingController</string>
+				<key>MMPlistName</key>
+				<string>MMRemind.plist</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>MMHeader</key>
+		<string></string>
+		<key>MMFooter</key>
+		<string></string>
+		<key>MMItems</key>
+		<array>
+			<dict>
+				<key>MMAccessoryName</key>
+				<string>arrow_right</string>
+				<key>MMAccessoryType</key>
+				<string>UIImageView</string>
+				<key>MMTitle</key>
+				<string>评分支持</string>
+				<key>MDRCallFunction</key>
+				<string>scoreSupport</string>
+			</dict>
+			<dict>
+				<key>MMTitle</key>
+				<string>客户电话</string>
+				<key>MMSubtitle</key>
+				<string>10086</string>
+				<key>MMCellStyle</key>
+				<string>UITableViewCellStyleValue1</string>
+				<key>MDRCallFunction</key>
+				<string>callKFMM</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>

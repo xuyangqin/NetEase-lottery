@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MMRotateView">
+            <rect key="frame" x="0.0" y="0.0" width="286" height="286"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="LuckyRotateWheel" translatesAutoresizingMaskIntoConstraints="NO" id="hiW-go-Tqh">
+                    <rect key="frame" x="0.0" y="0.0" width="286" height="286"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z1k-YZ-ToC">
+                    <rect key="frame" x="103" y="103" width="81" height="81"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="81" id="P4z-nM-1Ke"/>
+                        <constraint firstAttribute="width" constant="81" id="zIH-z4-31I"/>
+                    </constraints>
+                    <state key="normal" image="LuckyCenterButton"/>
+                    <state key="highlighted" image="LuckyCenterButtonPressed"/>
+                    <connections>
+                        <action selector="startButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="szH-qQ-JT2"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="hiW-go-Tqh" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="0Ee-Vg-NcG"/>
+                <constraint firstItem="z1k-YZ-ToC" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="58e-t2-HPj"/>
+                <constraint firstItem="hiW-go-Tqh" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Edd-Z0-27i"/>
+                <constraint firstItem="z1k-YZ-ToC" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="g1f-vn-Oup"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="rotateImageView" destination="hiW-go-Tqh" id="aFc-Xx-ts7"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="LuckyCenterButton" width="81" height="81"/>
+        <image name="LuckyCenterButtonPressed" width="81" height="81"/>
+        <image name="LuckyRotateWheel" width="286" height="286"/>
+    </resources>
+</document>

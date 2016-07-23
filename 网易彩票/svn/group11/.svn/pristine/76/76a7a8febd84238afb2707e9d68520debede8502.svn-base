@@ -1,0 +1,25 @@
+//
+//  ZCButtomView.h
+//  网易彩票
+//
+//  Created by Ning Xie on 16/6/20.
+//  Copyright © 2016年 itcast. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+@class ZCButtomView;
+
+
+@protocol ZCButtomViewDelegate <NSObject>
+
+-(void)buttomView:(ZCButtomView *)buttomView andWithSelectedIndex:(NSInteger)index;
+
+@end
+
+@interface ZCButtomView : UIView
+
+@property (weak, nonatomic) id<ZCButtomViewDelegate>delegate;
+
+-(void)addButtonWithImage:(UIImage *)image andWithSelectedImage:(UIImage *)selectedImage;
+
+@end

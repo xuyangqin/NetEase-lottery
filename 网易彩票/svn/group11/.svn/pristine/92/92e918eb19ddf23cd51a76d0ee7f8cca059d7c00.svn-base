@@ -1,0 +1,13 @@
+//
+//  ZCButton.h
+//  网易彩票
+//
+//  Created by Ning Xie on 16/6/20.
+//  Copyright © 2016年 itcast. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface ZCButton : UIButton
+
+@end

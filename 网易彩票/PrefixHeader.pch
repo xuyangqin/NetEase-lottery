@@ -1,0 +1,21 @@
+//
+//  PrefixHeader.pch
+//  网易彩票
+//
+//  Created by ios on 16/6/19.
+//  Copyright © 2016年 itcast. All rights reserved.
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#define QXYRandomColor [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0]
+
+//优化
+#ifdef DEBUG
+#define QXYLog(...) NSLog(__VA_ARGS__)
+#else
+#define MMLog(...)
+#endif
+#import "UIView+UIView_MDRExtension.h"
+#endif /* PrefixHeader_pch */

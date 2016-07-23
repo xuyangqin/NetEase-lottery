@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>MMHeader</key>
+		<string></string>
+		<key>MMFooter</key>
+		<string>开启后，当有新的中奖订单，打开应用时显示动画。</string>
+		<key>MMItems</key>
+		<array>
+			<dict>
+				<key>MMTitle</key>
+				<string>中奖动画</string>
+				<key>MMAccessoryType</key>
+				<string>UISwitch</string>
+				<key>MMKeyName</key>
+				<string>settingHome_more_homeshake</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>
